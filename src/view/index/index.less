@@ -1,0 +1,185 @@
+.wrap {
+  position: relative;
+  max-width: 375px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 15px;
+  touch-action: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.toplogo {
+  width: 100%;
+  height: 110px;
+}
+
+.listWrap {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+
+  .list {
+    width: 100%;
+    display: flex;
+    // align-items: center;
+    justify-content: start;
+    margin-top: 27px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    .list-logo {
+      width: 35px;
+      height: 35px;
+    }
+
+    .list-title {
+      width: 270px;
+      padding: 8px 0px;
+      font-size: 15px;
+      font-weight: 500;
+      color: rgba(111, 98, 96, 1);
+      line-height: 21px;
+      vertical-align: center;
+      margin-left: 8px;
+    }
+  }
+}
+
+.table {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  background: rgba(255, 252, 252, 1);
+  border-radius: 2px;
+  border: 1px solid rgba(242, 221, 221, 1);
+
+  .tab-item {
+    width: 100%;
+    min-height: 50px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #FDECEC;
+    padding: 0px 13px;
+    display: flex;
+    align-items: center;
+
+    .tab-logo {
+      width: 24px;
+      height: 24px;
+    }
+
+    .tab-input {
+      width: 280px;
+      height: 100%;
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(111, 98, 96, 1);
+      line-height: 22px;
+      margin-left: 15px;
+      background: rgba(255, 252, 252, 1);
+
+      &::placeholder {
+        color: #C6BEBC;
+      }
+    }
+
+    .tab-txet {
+      width: 280px;
+      height: 70px;
+      font-size: 16px;
+      padding-top: 15px;
+      font-weight: 400;
+      color: rgba(111, 98, 96, 1);
+      line-height: 22px;
+      margin-left: 15px;
+      background: rgba(255, 252, 252, 1);
+
+      &::placeholder {
+        color: #C6BEBC;
+      }
+
+      resize:none
+    }
+  }
+}
+
+.button-transparent {
+  width: 100%;
+  height: 46px;
+  background: linear-gradient(180deg, rgba(255, 143, 132, 1) 0%, rgba(236, 84, 71, 1) 100%);
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: 46px;
+  text-align: center;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: rgba(255, 243, 240, 1);
+  text-align: center;
+}
+
+.telInfo {
+  width: 100%;
+  height: 34px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 100px 100px;
+  border: 1px solid rgba(255, 217, 213, 1);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  .showTel {
+    width: 235px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0px 15px;
+    font-size: 15px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(241, 124, 124, 1);
+    line-height: 34px;
+  }
+
+  .call {
+    flex: auto;
+    height: 34px;
+    font-size: 15px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    background: linear-gradient(180deg, rgba(255, 143, 132, 1) 0%, rgba(236, 84, 71, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    .callLogo {
+      width: 22px;
+      height: 22px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.mask {
+  top: 0;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 9999;
+
+  .shareLogo {
+    float: right;
+    width: 258px;
+    height: 143px;
+    margin-top: 5px;
+    margin-right: 17px;
+  }
+}
