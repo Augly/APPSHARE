@@ -4,7 +4,7 @@
  * @Author: zero
  * @Date: 2020-03-26 10:26:00
  * @LastEditors: your name
- * @LastEditTime: 2020-04-02 20:58:39
+ * @LastEditTime: 2020-04-08 16:31:17
  */
 import axios from "axios";
 import { Toast } from 'antd-mobile';
@@ -16,6 +16,7 @@ const service = axios.create({
 });
 
 const err = error => {
+  Toast.hide()
   if (error.message.includes("timeout")) {
     Toast.fail('请求超时,请稍后重试!',2);
   }
@@ -43,7 +44,7 @@ const err = error => {
 
 // request interceptor
 service.interceptors.request.use(config => {
-  Toast.loading('数据加载中', 10)
+  Toast.loading('数据加载中', 10000)
   return config;
 }, err);
 
