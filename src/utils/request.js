@@ -4,7 +4,7 @@
  * @Author: zero
  * @Date: 2020-03-26 10:26:00
  * @LastEditors: your name
- * @LastEditTime: 2020-04-08 17:12:47
+ * @LastEditTime: 2020-04-08 17:13:54
  */
 import axios from "axios";
 import { Toast } from 'antd-mobile';
@@ -14,7 +14,7 @@ const service = axios.create({
   baseURL: "/api", // api base_url
   timeout: 100000 // 请求超时时间
 });
-const ll=1
+const ll=12
 const err = error => {
   Toast.hide()
   if (error.message.includes("timeout")) {
